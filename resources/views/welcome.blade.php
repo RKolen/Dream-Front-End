@@ -65,31 +65,23 @@
         </style>
     </head>
     <body>
+         @include ('layouts.nav')
         <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
-                    @endauth
-                </div>
-            @endif
+            
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
+            <div class="title m-b-md" style="position: relative; display: flex; justify-content: center; align-items: center; height: 100vh; width: 100vw;" id="particles-js">
+                     <div class="content" style="position: absolute; background-color: #FFFFFF; color:#F51414; height: 100%; width:75%; flex; justify-content: center; align-items: center;">
+                        <p>Dream</p> 
+                    </div>
                 </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+                           
+           
             </div>
         </div>
+         <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> 
+         <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+         <!-- stats.js lib --> 
+         <!-- <script src="http://threejs.org/examples/js/libs/stats.min.js"></script> -->
+         <script src="{{ asset('js/sidebar.js') }}"></script>
     </body>
 </html>
