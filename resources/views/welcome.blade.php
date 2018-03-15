@@ -72,9 +72,15 @@
             <div class="title m-b-md" style="position: relative; display: flex; justify-content: center; align-items: center; height: 100vh; width: 100vw;" id="particles-js">
                      <div class="content" style="position: absolute; background-color: #FFFFFF; color:#F51414; height: 100%; width:75%; flex; justify-content: center; align-items: center;">
                         <p>Dream</p> 
+                        <p style="font-size: 14px; color: black;">
+                            @foreach ($games as $game)
+                            {{$game->title}}
+                            @endforeach
+                        </p> 
                     </div>
+
                 </div>
-                           
+                          
            
             </div>
         </div>
