@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-@lang('general.name')
-  </body>
-</html>
+@extends('layouts.master')
+
+@section('page_title', "Dream - Home")
+
+@section('content')
+    <h1 id="logo">
+    @lang('general.name')
+    </h1>
+@stop

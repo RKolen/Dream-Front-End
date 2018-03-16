@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  --main-theme-color: #f51414;
+  --navbar-height: 40px;
+  font-family: 'Crimson Text', serif;
+}
