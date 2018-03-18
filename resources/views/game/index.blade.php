@@ -12,7 +12,7 @@
 {{$gameinfo->title}}
 </h1>
 
-<div id="banner" style="background-image: url('{{'http://' . env('BACKEND_URL') . '/games/' . $gameinfo->id . '/image'}}')">
+<div id="banner" style="background-image: url('{{env('BACKEND_URL') . '/games/' . $gameinfo->id . '/image'}}')">
 </div>
 
 <h2>Description</h2>
@@ -21,6 +21,6 @@
 </p>
 <br>
 
-<a id="download-button" href="{{'http://' . env('BACKEND_URL') . '/games/' . $gameinfo->id . '/download'}}">Download</a>
+<a id="download-button" href="{{env('BACKEND_URL') . '/games/' . $gameinfo->id . '/download'}}">Download</a>
 
 @stop
