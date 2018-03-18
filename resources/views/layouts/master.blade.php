@@ -5,6 +5,7 @@
     <title>@yield('page_title')</title>
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/main.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/master.css') }}">
+    @yield('stylesheets')
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
   </head>
   <body>

@@ -5,6 +5,7 @@
 
 html {
   --main-theme-color: #f51414;
+  --main-theme-color-grey: #333;
   --navbar-height: 40px;
   font-family: 'Crimson Text', serif;
 }

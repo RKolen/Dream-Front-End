@@ -5,8 +5,10 @@
 }
 
 #navbar {
-  background-color: #333;
+  background-color: var(--main-theme-color-grey);
   height: var(--navbar-height);
+  position: sticky;
+  top: 0;
 }
 
 #particles-js {
@@ -58,4 +60,8 @@ a {
   font-size: 1.2rem;
   color: white;
   text-decoration: none;
+}
+
+h2{
+  margin: 10px;
 }
