@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" http-equiv="Content-Security-Policy" content="default-src 'self' *.riccardoparrello.nl *; script-src 'self' 'unsafe-inline'; img-src *; style-src  'self' 'unsafe-inline' *">
+    <meta charset="utf-8">
     <title>@yield('page_title')</title>
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/main.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/master.css') }}">
