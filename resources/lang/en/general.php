@@ -5,5 +5,6 @@ return [
     'name' => 'Dream',
     'home' => 'Home',
     'store' => 'Store',
+    'login' => 'Login',
 
 ];

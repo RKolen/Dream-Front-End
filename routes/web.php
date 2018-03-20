@@ -4,13 +4,17 @@
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
 */
 
 Route::get('/', 'HomeController@index');
 
 Route::get('/games/{game}', 'GameController@show');
+
+//--------------------------------------------------------------------------
+//Authorization Routes
+
+Route::get('login', 'AuthorizationController@index');
+
+Route::post('login', 'AuthorizationController@login');
+
+Route::get('test', 'AuthorizationController@login');

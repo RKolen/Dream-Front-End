@@ -9,6 +9,7 @@
   height: var(--navbar-height);
   position: sticky;
   top: 0;
+  display: flex;
 }
 
 #particles-js {
@@ -64,4 +65,8 @@ a {
 
 h2{
   margin: 10px;
+}
+
+.spacer {
+    flex-grow: 1;
 }
