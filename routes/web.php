@@ -17,4 +17,4 @@ Route::get('login', 'AuthorizationController@index');
 
 Route::post('login', 'AuthorizationController@login');
 
-Route::get('test', 'AuthorizationController@login');
+Route::get('logout', 'AuthorizationController@logout');
