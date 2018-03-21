@@ -8,6 +8,9 @@ class AuthorizationController extends MainController
 {
     public function index()
     {
+      if (self::$logininfo->loggedin == true){
+        return redirect('/');
+      }
       return view('authorization.login');
     }
 
@@ -35,9 +38,7 @@ class AuthorizationController extends MainController
         return redirect()->back();
       }
     }
-
-
-
+    
 	public function logout()
     {
        setcookie('email', "", time() -3600);
