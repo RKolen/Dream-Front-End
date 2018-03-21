@@ -6,20 +6,28 @@ use Illuminate\Http\Request;
 
 class AuthorizationController extends Controller
 {
-
     public function index()
     {
-      return view('authorization.login');
+      $logininfo = new \stdClass();
+      $logininfo->loggedin = false;
+
+      if (isset($_COOKIE['email']) && isset($_COOKIE['notpassword']))
+      {
+          $email = $_COOKIE['email'];
+          $password = $_COOKIE['notpassword'];
+          $logininfo = $this->validateCrendentials($email, $password);
+      }
+      return view('authorization.login', compact('logininfo'));
     }
 
     public function login()
-    { //if logged in
+    {
       if (isset($_POST['email']) && isset($_POST['password']))
       {
           $logininfo = new \stdClass();
           $logininfo->loggedin = false;
           $loginInfo = $this->validateCrendentials($_POST['email'], $_POST['password']);
-          if($loginInfo->loggedin){
+          if($logininfo->loggedin){
             setcookie('email', $_POST['email'], time() + (86400*30), "/");
             setcookie('notpassword', $_POST['password'], time() + (86400*30), "/");
             if (isset($_POST['previous-url'])){
