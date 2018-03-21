@@ -1,0 +1,25 @@
+#banner {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h2 {
+  font-size: 1.4rem;
+  align-self: flex-start;
+  margin-left: 0;
+}
+
+p {
+  align-self: flex-start;
+}
+
+#download-button {
+  align-self: flex-start;
+  color: var(--main-theme-color-grey);
+  border-color: var(--main-theme-color);
+  border-width: 3px;
+  border-radius: 5px;
+  border-style: solid;
+}
