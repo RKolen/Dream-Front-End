@@ -6,5 +6,6 @@ return [
     'home' => 'Home',
     'store' => 'Store',
     'login' => 'Login',
+    'logout' => 'Logout',
 
 ];
