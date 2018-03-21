@@ -26,7 +26,7 @@ class AuthorizationController extends Controller
       {
           $logininfo = new \stdClass();
           $logininfo->loggedin = false;
-          $loginInfo = $this->validateCrendentials($_POST['email'], $_POST['password']);
+          $logininfo = $this->validateCrendentials($_POST['email'], $_POST['password']);
           if($logininfo->loggedin){
             setcookie('email', $_POST['email'], time() + (86400*30), "/");
             setcookie('notpassword', $_POST['password'], time() + (86400*30), "/");
