@@ -47,4 +47,4 @@ class AuthorizationController extends MainController
     }
 }
 
-//subscribe//check if allowed
+//subscribe//check if allowed, give error incorrect credentials
