@@ -41,8 +41,8 @@ class AuthorizationController extends MainController
 
 	public function logout()
     {
-       setcookie('email', "", time() -3600);
-       setcookie('notpassword', "", time() -3600);
+       setcookie('email', "", time() -3600, "/", env('DOMAIN_NAME'));
+       setcookie('notpassword', "", time() -3600, "/", env('DOMAIN_NAME'));
        return redirect('/');
     }
 }
