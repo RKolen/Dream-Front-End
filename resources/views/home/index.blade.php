@@ -29,6 +29,6 @@
     @endforeach
 </div>
 
-<a href="#" id="storelink">Go to store →</a>
+<a href="/store" id="storelink">Go to store →</a>
 
 @stop

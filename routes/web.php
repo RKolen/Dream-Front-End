@@ -18,3 +18,8 @@ Route::get('login', 'AuthorizationController@index');
 Route::post('login', 'AuthorizationController@login');
 
 Route::get('logout', 'AuthorizationController@logout');
+
+//--------------------------------------------------------------------------
+//Store Routes
+
+Route::get('store', 'StoreController@index');
