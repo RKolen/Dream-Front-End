@@ -6,7 +6,7 @@
     <div class="spacer"></div>
 
     @if ($logininfo->loggedin)
-    <li><a href="#">{{$logininfo->name}}</a></li>
+    <li><a href="/users/{{$logininfo->id}}">{{$logininfo->name}}</a></li>
     <li><a href="/logout">@lang('general.logout')</a></li>
     @else
     <li><a href="/login">@lang('general.login')</a></li>
