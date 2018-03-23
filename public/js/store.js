@@ -13,7 +13,7 @@ function loadGames(){
     if (this.readyState == 4 && this.status == 200) {
      var results = JSON.parse(this.responseText);
      for (var i = 0; i < results.length; i++){
-        gamewindow.innerHTML += "<div class=\"game-card\" onclick=\"location.href='/games/" + results[i]['id'] + "' \"><div class=\"game-card-image\" style=\"background-image: url(http://backend.dream.nl/games/" + results[i]['id'] + "/image)\"></div><h3>" + results[i]['title'] + "</h3></div>";
+        gamewindow.innerHTML += "<div class=\"game-card\" onclick=\"location.href='/games/" + results[i]['id'] + "' \"><div class=\"game-card-image\" style=\"background-image: url(" + _ENV['BACKEND_URL'] + "/games/" + results[i]['id'] + "/image)\"></div><h3>" + results[i]['title'] + "</h3></div>";
      }
     }
   };
