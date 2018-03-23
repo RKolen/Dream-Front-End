@@ -7,7 +7,7 @@ switch(hostName) {
     case "dream.nl":
         _ENV['BACKEND_URL']="http://backend.dream.nl";
         break;
-    case "riccardoparrello.nl":
+    case "dream.riccardoparrello.nl":
         _ENV['BACKEND_URL']="https://backend.dream.riccardoparrello.nl";
         break;
 }
