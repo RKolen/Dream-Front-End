@@ -23,3 +23,8 @@ Route::get('logout', 'AuthorizationController@logout');
 //Store Routes
 
 Route::get('store', 'StoreController@index');
+
+//--------------------------------------------------------------------------
+//User Routes
+
+Route::get('users/{user}', 'UserController@index');
