@@ -7,4 +7,9 @@
 
 @section('content')
 <h2>@lang('general.store')</h2>
+
+<div id="game-window">
+</div>
+
+<script src="{{ URL::asset('js/store.js') }}"></script>
 @stop
