@@ -16,4 +16,11 @@ class GameController extends MainController
       $gameinfo = json_decode($output);
       return view('game.index', compact('gameinfo'));
   }
+
+  public function create()
+  {
+    return view('game.upload');
+  }
+
+
 }

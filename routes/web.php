@@ -28,3 +28,8 @@ Route::get('store', 'StoreController@index');
 //User Routes
 
 Route::get('users/{user}', 'UserController@index');
+
+//--------------------------------------------------------------------------
+//Game Routes
+
+Route::get ('create', 'GameController@create');
