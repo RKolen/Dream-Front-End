@@ -9,7 +9,8 @@
 @section('content')
   @if ($userinfo->id == $logininfo->id)
     <h2>Your profile</h2>
-    <a>Upload a game</a>
+    
+    <a style="color:black;" href="/create">Upload a game</a>
   @else
     <h2>{{$userinfo->name}}</h2>
   @endif
