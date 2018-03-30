@@ -7,5 +7,6 @@ return [
     'store' => 'Store',
     'login' => 'Login',
     'logout' => 'Logout',
+    'appdownload' => 'Download the Desktop version',
 
 ];
