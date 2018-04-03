@@ -27,9 +27,11 @@
         {
             e.preventDefault();
             var formdata = new FormData(form);
-            request.open('post', 'http://backend.dream.nl/upload');
+            request.open('post', "{{env('BACKEND_URL') . '/upload'}}");
             request.addEventListener("load", transferComplete);
+            
             request.send(formdata);
+
         });
         function transferComplete(data)
         {
@@ -38,9 +40,9 @@
             console.log(response["id"] );
            {
             document.getElementById("message").innerHTML = "Successfully uploaded files!";
-            window.location.href = "http://dream.nl/games/" + response["id"] + "/";
+            window.location.href = "/games/" + response["id"] + "/";
            }
-        }
+        } 
     </script>
 @stop
 
