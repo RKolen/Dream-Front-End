@@ -19,6 +19,10 @@ Route::post('login', 'AuthorizationController@login');
 
 Route::get('logout', 'AuthorizationController@logout');
 
+Route::get('/register', 'AuthorizationController@register');
+
+Route::post('/validate', 'AuthorizationController@validate');
+
 //--------------------------------------------------------------------------
 //Store Routes
 

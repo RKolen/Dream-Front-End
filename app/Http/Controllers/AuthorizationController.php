@@ -45,6 +45,10 @@ class AuthorizationController extends MainController
        setcookie('notpassword', "", time() -3600, "/", env('DOMAIN_NAME'));
        return redirect('/');
     }
+
+    public function register()
+    {
+       return view('user.register');
+    }
 }
 
-//subscribe//check if allowed, give error incorrect credentials

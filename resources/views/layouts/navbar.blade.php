@@ -13,6 +13,7 @@
     <li><a href="/logout">@lang('general.logout')</a></li>
     @else
     <li><a href="/login">@lang('general.login')</a></li>
+    <li><a href="/register">Register</a></li>
     @endif
   </ul>
 </nav>

@@ -15,7 +15,11 @@
     <label>Password:</label><br>
     <input type="password" name="password" required><br>
     @csrf
-    <input type="hidden" name="previous-url" value="{{ url()->previous() }}">
+    <input type="hidden" name="previous-url" value="/login">
     <input type="submit" value="Submit">
 </form>
+<br>
+<div>
+    <a href="/reset" style="color:black">Forgot Your Password?</a>
+</div>
 @stop
