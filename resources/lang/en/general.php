@@ -8,5 +8,6 @@ return [
     'login' => 'Login',
     'logout' => 'Logout',
     'appdownload' => 'Download the Desktop version',
+    'search' => 'Search Options',
 
 ];

@@ -8,8 +8,20 @@
 
 @section('content')
 <h2>@lang('general.store')</h2>
-<br><br><br><br><br><br>
-
+<br><br>
+<h3>@lang('general.search')</h3>
+<br>
+<form onSubmit="loadGames();" >
+  <select name="orderby" id="orderby" onchange="loadGames();">
+    <option value="downloads">Most Popular</option>
+    <option value="least">Least Popular</option>
+   <!--  <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option> -->
+  </select>
+  <br><br>
+</form>
+<br><br>
 <div id="game-window">
 </div>
 
