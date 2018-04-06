@@ -14,7 +14,7 @@
     	<label class="label">Description: </label>
     	<textarea  rows="15" cols="100" name="description" id="description"></textarea><br />
         <label class="label">Category: </label>
-            <select id="category_id" >
+            <select id="category_id" name="category_id">
                 <option value="1">MMO</option>
                 <option value="2">Simulations</option>
                 <option value="3">Adventure</option>
@@ -52,7 +52,6 @@
         {
            response = JSON.parse( data.currentTarget.response);
            if(response.success)
-            console.log(response["id"] );
            {
             document.getElementById("message").innerHTML = "Successfully uploaded files!";
             window.location.href = "/games/" + response["id"] + "/";
