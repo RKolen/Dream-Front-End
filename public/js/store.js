@@ -9,8 +9,9 @@ body.onload = function(){
 
 function loadGames(){
   var xhttp = new XMLHttpRequest();
-  var param ="orderby=" + document.getElementById("orderby").value;
-  console.log(param);
+  var order ="orderby=" + document.getElementById("orderby").value;
+  var category = "category=" + document.getElementById("category_id").value;
+  
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       
@@ -21,6 +22,6 @@ function loadGames(){
      }
     }
   };
-  xhttp.open("GET", _ENV['BACKEND_URL'] + "/search?" + param, true);
+  xhttp.open("GET", _ENV['BACKEND_URL'] + "/search?" + order + "\&" + category, true);
   xhttp.send();
 }
