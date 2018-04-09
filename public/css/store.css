@@ -20,6 +20,7 @@ h2 {
 .game-card-image {
   height: 75%;
   width: 100%;
+  background-size: cover;
 }
 
 h3 {
