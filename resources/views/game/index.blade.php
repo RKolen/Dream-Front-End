@@ -21,6 +21,10 @@
 </p>
 <br>
 
+<a id="switch-link" href="https://switch.vps.codegorilla.nl/">Watch it on <img src="https://switch.vps.codegorilla.nl/images/Switch-logo.png" alt="Switch"></a>
+
+@if ($logininfo->loggedin)
 <a id="download-button" href="{{env('BACKEND_URL') . '/games/' . $gameinfo->id . '/download'}}">Download</a>
+@endif
 
 @stop
