@@ -21,6 +21,7 @@
     </div>
 
     <div id="particles-js"></div>
+    <script src="{{ URL::asset('js/env.js') }}"></script>
     <script src="{{ URL::asset('js/particles-source.js') }}"></script>
     <script src="{{ URL::asset('js/particles.js') }}"></script>
   </body>

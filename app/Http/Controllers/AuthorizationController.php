@@ -22,8 +22,8 @@ class AuthorizationController extends MainController
           $logininfo->loggedin = false;
           $logininfo = $this->validateCrendentials($_POST['email'], $_POST['password']);
           if($logininfo->loggedin){
-            setcookie('email', $_POST['email'], time() + (86400*30), "/");
-            setcookie('notpassword', $_POST['password'], time() + (86400*30), "/");
+            setcookie('email', $_POST['email'], time() + (86400*30), "/", env('DOMAIN_NAME'));
+            setcookie('notpassword', $_POST['password'], time() + (86400*30), "/", env('DOMAIN_NAME'));
             if (isset($_POST['previous-url'])){
                 return redirect($_POST['previous-url']);
             }
@@ -38,13 +38,17 @@ class AuthorizationController extends MainController
         return redirect()->back();
       }
     }
-    
+
 	public function logout()
     {
-       setcookie('email', "", time() -3600);
-       setcookie('notpassword', "", time() -3600);
+       setcookie('email', "", time() -3600, "/", env('DOMAIN_NAME'));
+       setcookie('notpassword', "", time() -3600, "/", env('DOMAIN_NAME'));
        return redirect('/');
+    }
+
+    public function register()
+    {
+       return view('user.register');
     }
 }
 
-//subscribe//check if allowed, give error incorrect credentials

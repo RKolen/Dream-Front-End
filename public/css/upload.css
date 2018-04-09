@@ -1,0 +1,23 @@
+
+.label{
+	font-size: 1.4rem;
+    align-self: flex-start;
+    margin-left: 0;
+}
+
+.button {
+    background-color: white; 
+    border-color: var(--main-theme-color);
+    color: var(--main-theme-color-grey);
+    border-width: 3px;
+ 	border-radius: 5px;
+    border-style: solid;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.4rem;
+    align-self: flex-start;
+    margin-left: 0;
+    cursor: pointer;
+}
