@@ -1,9 +1,11 @@
-h2 {
+h2 
+{
   color: var(--main-theme-color);
   font-size: 2rem;
 }
 
-input[type="submit"] {
+input[type="submit"] 
+{
   background-color: transparent;
   border: none;
   border-style: solid;
@@ -13,7 +15,8 @@ input[type="submit"] {
   margin-top: 10px;
 }
 
-#name, #email {
+#name, #email 
+{
   color: var(--main-theme-color);
   font-size: 2rem;
 }

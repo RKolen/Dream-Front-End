@@ -15,7 +15,7 @@
     <div id="page-container">
       <div id="content-container">
 
-          @yield('content')
+        @yield('content')
 
       </div>
     </div>

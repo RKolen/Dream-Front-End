@@ -1,31 +1,37 @@
-#banner {
+#banner 
+{
   width: 100%;
   height: 200px;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-h2 {
+h2 
+{
   font-size: 1.4rem;
   align-self: flex-start;
   margin-left: 0;
 }
 
-p {
+p 
+{
   align-self: flex-start;
 }
 
-#switch-link {
+#switch-link 
+{
   display: flex;
   align-items: center;
   color: black;
 }
 
-#switch-link img {
+#switch-link img 
+{
   width: 50px;
 }
 
-#download-button {
+#download-button 
+{
   align-self: flex-start;
   color: var(--main-theme-color-grey);
   border-color: var(--main-theme-color);

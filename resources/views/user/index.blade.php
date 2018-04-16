@@ -3,7 +3,7 @@
 @section('page_title', "Dream - $userinfo->name")
 
 @section('stylesheets')
-<link rel="stylesheet" type="text/css" href="{{ URL::asset('css/user.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ URL::asset('css/user.css') }}">
 @stop
 
 @section('content')

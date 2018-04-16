@@ -3,7 +3,8 @@
 var _ENV = {BACKEND_URL:""};
 var hostName = window.location.hostname;
 
-switch(hostName) {
+switch(hostName) 
+{
     case "dream.nl":
         _ENV['BACKEND_URL']="http://backend.dream.nl";
         break;

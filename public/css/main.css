@@ -1,9 +1,11 @@
-* {
+* 
+{
   margin: 0;
   padding: 0;
 }
 
-html {
+html 
+{
   --main-theme-color: #f51414;
   --main-theme-color-grey: #333;
   --navbar-height: 40px;

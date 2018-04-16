@@ -1,11 +1,13 @@
 
-.label{
+.label
+{
 	font-size: 1.4rem;
     align-self: flex-start;
     margin-left: 0;
 }
 
-.button {
+.button 
+{
     background-color: white; 
     border-color: var(--main-theme-color);
     color: var(--main-theme-color-grey);

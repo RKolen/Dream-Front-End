@@ -35,6 +35,7 @@
     <div id="message"></div>
 
     <script>
+
         var form = document.getElementById('upload');
         var request = new XMLHttpRequest();
 
@@ -46,7 +47,6 @@
             request.addEventListener("load", transferComplete);
             
             request.send(formdata);
-
         });
         function transferComplete(data)
         {
